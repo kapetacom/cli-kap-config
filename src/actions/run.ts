@@ -2,21 +2,11 @@
  * Copyright 2023 Kapeta Inc.
  * SPDX-License-Identifier: MIT
  */
-import { spawn } from '@kapeta/nodejs-process';
-import { disableConsoleWhile } from '../console-overrides';
-import { resolveKapetaVariables } from '@kapeta/config-mapper';
+import { runWithConfig} from '@kapeta/config-mapper';
 
 export async function run(cmd: string, args: string[]) {
     try {
-        const kapetaVariables = await disableConsoleWhile(resolveKapetaVariables);
-        const child = spawn(cmd, args, {
-            env: {
-                ...kapetaVariables,
-                ...process.env,
-            },
-            stdio: 'pipe',
-            shell: true,
-        });
+        const child = await runWithConfig(cmd, args);
         child.process.stdout?.pipe(process.stdout);
         child.process.stderr?.pipe(process.stderr);
         if (child.process.stdin) {

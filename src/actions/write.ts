@@ -2,11 +2,9 @@
  * Copyright 2023 Kapeta Inc.
  * SPDX-License-Identifier: MIT
  */
-import { disableConsoleWhile } from '../console-overrides';
-import { resolveKapetaVariables } from '../variable-resolver';
-import { writeConfigTemplates } from '../config-resolver';
 import Path from 'path';
 import FS from 'node:fs/promises';
+import { resolveKapetaVariables, writeConfigTemplates } from '@kapeta/config-mapper';
 
 const DOTENV_FILE = '.env';
 

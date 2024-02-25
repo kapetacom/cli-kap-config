@@ -3,8 +3,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-import { resolveKapetaVariables } from '../variable-resolver';
 import { disableConsoleWhile } from '../console-overrides';
+import { resolveKapetaVariables } from '@kapeta/config-mapper';
 
 export async function showEnv() {
     try {

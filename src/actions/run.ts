@@ -4,7 +4,7 @@
  */
 import { spawn } from '@kapeta/nodejs-process';
 import { disableConsoleWhile } from '../console-overrides';
-import { resolveKapetaVariables } from '../variable-resolver';
+import { resolveKapetaVariables } from '@kapeta/config-mapper';
 
 export async function run(cmd: string, args: string[]) {
     try {
@@ -20,7 +20,7 @@ export async function run(cmd: string, args: string[]) {
         child.process.stdout?.pipe(process.stdout);
         child.process.stderr?.pipe(process.stderr);
         if (child.process.stdin) {
-            process.stdin.pipe(child.process.stdin)
+            process.stdin.pipe(child.process.stdin);
         }
         child.process.on('exit', (code, signal) => {
             process.exit(code || signal ? 1 : 0);

@@ -1,0 +1,16 @@
+name: Pull request
+on:
+  pull_request:
+jobs:
+  build-node:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: 'Install npm'
+        run: npm ci
+
+      - name: 'Build package'
+        run: npm run build
+
+

@@ -10,5 +10,6 @@ export async function write() {
         await writeConfig();
     } catch (e: any) {
         console.error('Failed to write configuration: %s', e.message);
+        process.exitCode = 1;
     }
 }

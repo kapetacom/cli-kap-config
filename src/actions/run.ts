@@ -13,10 +13,11 @@ export async function run(cmd: string, args: string[]) {
             process.stdin.pipe(child.process.stdin);
         }
         child.process.on('exit', (code, signal) => {
-            process.exit(code || signal ? 1 : 0);
+            process.exitCode = code || signal ? 1 : 0;
         });
         await child.wait();
     } catch (e: any) {
         console.error('Failed to run command: %s', e.message);
+        process.exitCode = 1;
     }
 }

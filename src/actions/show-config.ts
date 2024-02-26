@@ -19,5 +19,6 @@ export async function showConfig() {
         }
     } catch (e: any) {
         console.error('Failed to show configuration: %s', e.message);
+        process.exitCode = 1;
     }
 }

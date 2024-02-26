@@ -98,7 +98,7 @@
         "outputPath": "dist/binary"
     },
     "dependencies": {
-        "@kapeta/config-mapper": "../config-mapper/nodejs",
+        "@kapeta/config-mapper": "^1",
         "@kapeta/kap-command": "^1"
     },
     "bundledDependencies": true,

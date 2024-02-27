@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/kapetacom/cli-kap-config/compare/v1.0.0...v1.0.1) (2024-02-27)
+
+
+### Bug Fixes
+
+* build ([5f9acd7](https://github.com/kapetacom/cli-kap-config/commit/5f9acd7c8b2f7f0e3acb0b8d866ac81995deffcf))
+
 # 1.0.0 (2024-02-27)
 
 

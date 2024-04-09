@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kapetacom/cli-kap-config/compare/v1.0.1...v1.1.0) (2024-04-09)
+
+
+### Features
+
+* Handle large env vars using a file based approach ([6538d8b](https://github.com/kapetacom/cli-kap-config/commit/6538d8b8554ea99065c72727dda9c38cb42ca9db))
+
 ## [1.0.1](https://github.com/kapetacom/cli-kap-config/compare/v1.0.0...v1.0.1) (2024-02-27)
 
 

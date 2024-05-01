@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/kapetacom/cli-kap-config/compare/v1.1.0...v1.1.1) (2024-05-01)
+
+
+### Bug Fixes
+
+* Issues related to dotenv resolving ([f19d779](https://github.com/kapetacom/cli-kap-config/commit/f19d779634efe2f9e61bb80fde07adb259b42fdf))
+
 # [1.1.0](https://github.com/kapetacom/cli-kap-config/compare/v1.0.1...v1.1.0) (2024-04-09)
 
 

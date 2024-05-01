@@ -1,6 +1,6 @@
 {
     "name": "@kapeta/kap-config",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "command": "config",
     "description": "Maps kapeta env vars to dotenv and/or config files",
     "type": "commonjs",
